@@ -34,5 +34,10 @@ BtnImage = tk.Button( text = "Click me !", image = ImgResize, compound = "left",
 BtnImage.pack()
 #------------------- end of button example -------------------#
 
+#------------------- label example -------------------#
+Lb = tk.Label( background = "#CCE5FF", text = "label example" )
+Lb.pack()
+#------------------- end of label example -------------------#
+
 # let Tkinter start running the application
 Win.mainloop()
