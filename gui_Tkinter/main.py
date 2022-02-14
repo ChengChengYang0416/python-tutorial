@@ -25,18 +25,18 @@ Win.attributes( "-topmost", True )
 # basic button with pixel size
 Pixel = tk.PhotoImage( width = 1, height = 1 )
 Btn = tk.Button( text = "Button", image = Pixel, background = "#FFFFFF", width = 40, height = 10, compound = "c" )
-Btn.pack()
+Btn.place( x = 10, y = 10 )
 
 # insert image to button and show the text simultaneously
 Img = tk.PhotoImage( file = "Button.png" )
 ImgResize = Img.subsample( 20, 20 )
 BtnImage = tk.Button( text = "Click me !", image = ImgResize, compound = "left", command = ButtonFcn.PrintHello )
-BtnImage.pack()
+BtnImage.place( x = 10, y = 35 )
 #------------------- end of button example -------------------#
 
 #------------------- label example -------------------#
 Lb = tk.Label( background = "#CCE5FF", text = "label example" )
-Lb.pack()
+Lb.place( x = 80, y = 11 )
 #------------------- end of label example -------------------#
 
 # let Tkinter start running the application
